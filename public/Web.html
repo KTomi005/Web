@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../src/Web.css">
+  <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.min.css">
+  <title>Dungeon Valley Explorer</title>
+</head>
+<body>
+
+  <div class="header">
+      <div class="header-left">
+          <a href="#">Dungeon Valley Explorer</a>
+      </div>
+  </div>
+
+  <div class="main">
+      <h1>Welcome to Dungeon Valley Explorer</h1>
+      <h2>Your journey begins here.</h2>
+      <img src="../src/Components/assets/Castle.png" alt="Castle">
+      <br><br>
+      <div class="row">
+          <div class="col-12">
+              <h1>Learn about the game.</h1>
+              <br>
+              <p>
+                  The game will be a text-based dungeon crawler. There is a Main menu with account management system
+                  e.g. :(add new user), an easy-to-understand <a href="">tutorial</a>, a city including shops, quests, and party
+                  management. From here, you can start exploring a dungeon. The combat system is the most complex part. 
+                  There is also an inventory system with usable items and consumables e.g. :(Healing potion).
+              </p>
+          </div>
+      </div>
+
+      <!-- Kijelentkezés gomb -->
+      <button id="logoutButton" class="btn btn-danger" onclick="handleLogout()">Logout</button>
+
+  </div>
+
+  <script src="Web.js"></script>
+  <script>
+    // Kijelentkezés funkció
+    function handleLogout() {
+        alert("Sikeres kijelentkezés!");
+        window.location.href = "/";  // Itt irányítod a felhasználót a kezdőoldalra vagy login oldalra
+    }
+  </script>
+
+</body>
+</html>
