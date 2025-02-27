@@ -73,7 +73,9 @@ const LoginSignup = () => {
                     <div className="input-box">
                         <input type="text" name="username" placeholder="Username" required />
                     </div>
-
+                    <div className="input-box">
+                        <input type="email" name="email" placeholder="Email" required />
+                    </div>
                     <div className="input-box">
                         <input type="password" name="password" placeholder="Password" required />
                     </div>
@@ -107,8 +109,13 @@ const LoginSignup = () => {
                     <div className="input-box">
                         <input type="password" name="password" placeholder="Password" required />
                     </div>
-
-                    <label><input type="checkbox" required />I agree to the terms & conditions</label>
+                    <div className="input-box">
+                        <input type="password" name="password again" placeholder="Password again" required />
+                    </div>
+                    <label class="checkbox-container">
+                    <input type="checkbox" required />
+                    <p id="terms">I agree to the terms & conditions</p>
+                    </label>
 
                     <button type="submit">Register</button>
 

@@ -1,11 +1,11 @@
 .wrapper{
   position: relative;
   width: 420px;
-  min-height: 450px;
+  min-height: 550px;
   height: 450px;
   background: transparent;
   backdrop-filter: blur(30px);
-  border-radius: 10px;
+  border-radius: 100px;
   color: #fff;
   display: flex;
   align-items: center;
@@ -52,7 +52,7 @@ form .input-box{
   position: relative;
   width: 100%;
   padding: 0.5px;
-  margin: 15px 0;
+  margin: 30px 0;
 }
 
 .input-box input{
@@ -128,4 +128,13 @@ form .register-link{
 
 .register-link p a:hover{
   text-decoration: underline;
+}
+.checkbox-container {
+  display: flex;
+  align-items: center; /* Középre igazítás */
+  gap: 25px;
+}
+
+.checkbox-container p {
+  margin: 0; /* Alapértelmezett margó eltávolítása */
 }
