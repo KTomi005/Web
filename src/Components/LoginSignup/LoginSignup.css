@@ -28,7 +28,7 @@ form h1{
   height: auto; /* Let height adjust based on content */
   background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
   backdrop-filter: blur(30px);
-  border-radius: 10px;
+  border-radius: 100px;
   color: #fff;
   display: none;
   flex-direction: column;
