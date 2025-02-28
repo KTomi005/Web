@@ -28,7 +28,7 @@ form h1{
   height: auto; /* Let height adjust based on content */
   background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
   backdrop-filter: blur(30px);
-  border-radius: 100px;
+  border-radius: 55px;
   color: #fff;
   display: none;
   flex-direction: column;
@@ -44,8 +44,10 @@ form h1{
 
 form h1 {
   font-size: 36px;
+  margin-left: 100px;
+  margin-right: 75px;
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
 }
 
 .input-box {
