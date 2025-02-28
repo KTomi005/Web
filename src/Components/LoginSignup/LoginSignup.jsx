@@ -1,45 +1,37 @@
 import React, { useState } from "react";
 import './LoginSignup.css'
 
-
-
-
 const LoginSignup = () => {
-    const [action, setAction] = useState('');
+    const [action, setAction] = useState('login'); // Kezdeti állapot: login
     const [successMessage, setSuccessMessage] = useState('');
     const [errorMessage, setErrorMessage] = useState('');
 
-    
     const registerLink = () => {
-        setAction('active');
+        setAction('register');  // Regisztrációs form aktívvá tétele
     };
 
     const loginLink = () => {
-        setAction('');
+        setAction('login');  // Bejelentkezési form aktívvá tétele
     };
 
-    
     const handleRegisterSubmit = (e) => {
-        e.preventDefault(); 
+        e.preventDefault();
 
         const username = e.target.username.value;
         const email = e.target.email.value;
         const password = e.target.password.value;
 
-        
         localStorage.setItem("username", username);
         localStorage.setItem("email", email);
         localStorage.setItem("password", password);
 
         setSuccessMessage("Registration successful! Redirecting to the website...");
 
-        
         setTimeout(() => {
             window.location.href = "Web.html";
         }, 2000);
     };
-    
-    
+
     const handleLoginSubmit = (e) => {
         e.preventDefault();
 
@@ -63,21 +55,22 @@ const LoginSignup = () => {
     };
 
     return (
-       
         <div className={`wrapper ${action}`}>
-            
-            <div className="form-box login">
+            {/* Bejelentkezési forma */}
+            <div className={`form-box login ${action === 'login' ? 'show' : ''}`}>
                 <form onSubmit={handleLoginSubmit}>
                     <h1>Login</h1>
 
                     <div className="input-box">
                         <input type="text" name="username" placeholder="Username" required />
                     </div>
-
+                    <div className="input-box">
+                        <input type="email" name="email" placeholder="Email" required />
+                    </div>
                     <div className="input-box">
                         <input type="password" name="password" placeholder="Password" required />
                     </div>
-
+                    <br />
                     <div className="remember-forgot">
                         <label><input type="checkbox" />Remember me</label>
                         <a href="#">Forgot Password?</a>
@@ -85,7 +78,7 @@ const LoginSignup = () => {
 
                     <button type="submit">Login</button>
 
-                    {errorMessage && <p style={{ color: 'red' }}>{errorMessage}</p>} {/* Hibaüzenet megjelenítése */}
+                    {errorMessage && <p style={{ color: 'red' }}>{errorMessage}</p>}
 
                     <div className="register-link">
                         <p>Don't have an account? <a href="#" onClick={registerLink}>Register</a></p>
@@ -93,8 +86,8 @@ const LoginSignup = () => {
                 </form>
             </div>
 
-            
-            <div className="form-box register">
+            {/* Regisztrációs forma */}
+            <div className={`form-box register ${action === 'register' ? 'show' : ''}`}>
                 <form onSubmit={handleRegisterSubmit}>
                     <h1>Registration</h1>
 
@@ -107,8 +100,10 @@ const LoginSignup = () => {
                     <div className="input-box">
                         <input type="password" name="password" placeholder="Password" required />
                     </div>
-
-                    <label><input type="checkbox" required />I agree to the terms & conditions</label>
+                    <div className="input-box">
+                        <input type="password" name="password again" placeholder="Password again" required />
+                    </div>
+                    <label><input type="checkbox" required /> I agree to the terms & conditions</label>
 
                     <button type="submit">Register</button>
 
@@ -117,7 +112,6 @@ const LoginSignup = () => {
                     </div>
                 </form>
 
-                
                 {successMessage && (
                     <div className="success-message">
                         <p>{successMessage}</p>
@@ -125,7 +119,6 @@ const LoginSignup = () => {
                 )}
             </div>
         </div>
-        
     );
 }
 
