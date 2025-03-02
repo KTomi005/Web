@@ -1,7 +1,7 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './KezdoLap.css';
- 
+
 const KezdoLap = () => {
     const navigate = useNavigate();
  

@@ -3,6 +3,7 @@ html, body {
   height: 100%;
   margin: 0;
   width: 100%;
+  font-family: Arial,  sans-serif;
 }
 form h1{
   justify-content: center;
@@ -19,12 +20,14 @@ form h1{
   background-repeat: no-repeat;
   color: #fff;
   padding: 25px; /* Add padding to prevent elements from touching edges */
+  overflow: hidden;
 }
 
 .form-box {
   position: relative;
-  width: 420px; /* Set a fixed width for forms */
+  width: 100%; /* Set a fixed width for forms */
   min-height: 450px;
+  max-width: 420px;
   height: auto; /* Let height adjust based on content */
   background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
   backdrop-filter: blur(30px);
@@ -44,6 +47,7 @@ form h1{
 
 form h1 {
   font-size: 36px;
+  margin: 0 75px 25px 75px;
   margin-left: 100px;
   margin-right: 75px;
   text-align: center;
@@ -59,7 +63,7 @@ form h1 {
 
 .input-box input {
   text-align: center;
-  width: 350px;
+  width: 100%;
   height: 52px;
   padding:15px;
   font-size: 16px;
