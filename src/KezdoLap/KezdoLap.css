@@ -82,3 +82,21 @@ h1{
         margin: 5px 0;
     }
 }
+/* Informational szöveg blokkolása */
+.Informational {
+    margin-top: 80px; /* hozzáadva, hogy a tartalom ne takarja el a topnav */
+    padding: 20px;
+    text-align: left;
+}
+
+.info-block {
+    display: block;
+}
+
+.info-block h3 {
+    margin-bottom: 10px; /* kisebb távolságot adunk a cím és a szöveg között */
+}
+
+.info-block p {
+    line-height: 1.6; /* könnyebben olvashatóvá teszi a szöveget */
+}
