@@ -1,91 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./src/Web.css">
-  <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.min.css">
-  <title>Dungeon Valley Explorer</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="./src/Web.css">
+<link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.min.css">
+<title>Dungeon Valley Explorer</title>
 </head>
 <body>
-
+ 
   <div class="header">
-      <div class="header-left">
-          <a href="#">Dungeon Valley Explorer</a>
-      </div>
-      <div class="header-right">
-        <button id="logoutButton" class="btn btn-danger" onclick="handleLogout()">Logout</button>
-
+<div class="header-left">
+<a href="#">Dungeon Valley Explorer</a>
+</div>
+<div class="header-right">
+<button id="logoutButton" class="btn btn-danger" onclick="handleLogout()">Logout</button>
+ 
         <script>
         function handleLogout() {
             alert("Sikeres kijelentkezés!");
             window.location.href = "/";  
         }
-        </script>   
-    </div>
-  </div>
-
+</script>   
+</div>
+</div>
+ 
+  <!-- Castle háttér div -->
+<div class="castle-background">
+<img src="../src/Components/assets/Castle.png" alt="Castle" id="castle">
+</div>
+ 
   <div class="main">
-      <h1>Welcome to Dungeon Valley Explorer</h1>
-      <h2>Your journey begins here.</h2>
-      <br><br>
-      <img src="../src/Components/assets/Castle.png" alt="Castle" id="castle">
-      <br><br>
-      <div class="row">
-          <div class="col-12">
-            <br><br>
-              <h1>Learn about the game.</h1>
-              <br>
-              <p>
+<h1>Welcome to Dungeon Valley Explorer</h1>
+<h2>Your journey begins here.</h2>
+<br><br>
+<div class="row">
+<div class="col-12">
+<br><br>
+<h1>Learn about the game.</h1>
+<br>
+<p>
                   The game will be a text-based dungeon crawler. There is a Main menu with account management system
                   e.g. :(add new user), an easy-to-understand <a href="">tutorial</a>, a city including shops, quests, and party
                   management. From here, you can start exploring a dungeon. The combat system is the most complex part. 
                   There is also an inventory system with usable items and consumables e.g. :(Healing potion).
-              </p>
-          </div>
-      </div>
-      <br><br>
-      <div class="row align-items-center">
-        <!-- Helpful guides bal oldalon -->
-        <div class="col-md-6">
-            <h1>Helpful guides</h1>
-            <br>
-            <ul>
-                <li>Easy to understand explanations about game mechanics.</li>
-                <li>Helpful tips and tricks</li>
-                <li>And a whole gallery full of information</li>
-            </ul>
-        </div>
-        <!-- Kép jobb oldalon -->
-        <div class="col-md-6 text-center">
-            <img src="/src/Components/assets/Helpful_Tips.png" alt="Helpful Guides" id="guides" class="img-fluid">
-        </div>
-    </div>
-
-    <br><br>
-
-    <div class="row align-items-center flex-row-reverse">
-        <!-- Friendly community jobb oldalon -->
-        <div class="col-md-6">
-            <h1>A friendly community.</h1>
-            <br>
-            <ul>
-                <li>A place for you to chat about the game.</li>
-                <li>You can ask anyone for help.</li>
-                <li>Moderated to keep the harm out.</li>
-            </ul>
-        </div>
-        <!-- Kép bal oldalon -->
-        <div class="col-md-6 text-center">
-            <img src="/src/Components/assets/Friendly_Community.png" alt="Friendly Community" id="community" class="img-fluid">
-        </div>
-    </div>
+</p>
 </div>
-
-
-
-
-
-  <script src="Web.js"></script>
+</div>
+<br><br>
+<div class="row align-items-center">
+<!-- Helpful guides bal oldalon -->
+<div class="col-md-6">
+<h1>Helpful guides</h1>
+<br>
+<ul>
+<li>Easy to understand explanations about game mechanics.</li>
+<li>Helpful tips and tricks</li>
+<li>And a whole gallery full of information</li>
+</ul>
+</div>
+<!-- Kép jobb oldalon -->
+<div class="col-md-6 text-center">
+<img src="/src/Components/assets/Helpful_Tips.png" alt="Helpful Guides" id="guides" class="img-fluid">
+</div>
+</div>
+ 
+    <br><br>
+ 
+    <div class="row align-items-center flex-row-reverse">
+<!-- Friendly community jobb oldalon -->
+<div class="col-md-6">
+<h1>A friendly community.</h1>
+<br>
+<ul>
+<li>A place for you to chat about the game.</li>
+<li>You can ask anyone for help.</li>
+<li>Moderated to keep the harm out.</li>
+</ul>
+</div>
+<!-- Kép bal oldalon -->
+<div class="col-md-6 text-center">
+<img src="/src/Components/assets/Friendly_Community.png" alt="Friendly Community" id="community" class="img-fluid">
+</div>
+</div>
+</div>
+ 
+<script src="Web.js"></script>
 </body>
 </html>
