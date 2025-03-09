@@ -17,7 +17,7 @@ const db = mysql.createConnection({
     host: "127.0.0.1",
     port: 3306,
     password: "",
-    database: "dungeon",
+    database: "dungeon"
 }); 
 db.connect(err => {
     if (err) {
@@ -34,6 +34,7 @@ app.get('/signup', (req, res) => {
         res.json(results);
     });
 });
+
 app.listen(3001, () => {
     console.log("Server is running on port 3001");
 });
