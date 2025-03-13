@@ -1,0 +1,103 @@
+body{
+    margin: 0;
+    font-family: arial, sans-serif;
+    background-image: url("./white.jpg");
+}
+h1{
+    text-align: center;
+    color: white !important;
+    font-weight: bolder;
+    flex-grow: 1;
+    margin-left: 0;
+}
+
+.topnav{
+    background-color: #333;
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    z-index: 1000;
+}
+.topnav h1{
+    flex-grow: 1;
+    text-align: center;
+    margin: 0;
+}
+.topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+.topnav a:hover{
+    background-color: #ddd;
+    color: black;
+}
+
+.btn{
+    color: black;
+    background-color: white !important;
+    border-radius: 35px !important;
+    height: 45px;
+    width: 120px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    margin: 0px 10px;
+}
+.button-container {
+    display: flex;
+    gap: 10px;
+}
+.btn:hover{
+    background-color: #ddd;
+}
+
+/* Mobilbarát nézet */
+@media screen and (max-width: 858px),
+       screen and(max-height:320px){
+    .topnav
+        {
+        flex-direction: column;
+        align-items: center;
+        padding: 15px 0;
+        }
+    h1
+        {
+        font-size: 24px;
+        margin: 10px 0;
+        }
+        .button-container{
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+    }
+    btn{
+        width: 80%;
+        margin: 5px 0;
+    }
+}
+/* Informational szöveg blokkolása */
+.Informational {
+    margin-top: 80px; /* hozzáadva, hogy a tartalom ne takarja el a topnav */
+    padding: 20px;
+    text-align: left;
+}
+
+.info-block {
+    display: block;
+}
+
+.info-block h3 {
+    margin-bottom: 10px; /* kisebb távolságot adunk a cím és a szöveg között */
+}
+
+.info-block p {
+    line-height: 1.6; /* könnyebben olvashatóvá teszi a szöveget */
+}
