@@ -4,6 +4,7 @@ import './LoginSignup.css'
 
 
 
+
 const LoginSignup = () => {
     const [action, setAction] = useState('');
     const [successMessage, setSuccessMessage] = useState('');
@@ -64,7 +65,7 @@ const LoginSignup = () => {
 
     return (
        
-        <div className={`wrapper ${action}`}>
+        <div className={`wrapper login-signup ${action}`}>
             
             <div className="form-box login">
                 <form onSubmit={handleLoginSubmit}>
