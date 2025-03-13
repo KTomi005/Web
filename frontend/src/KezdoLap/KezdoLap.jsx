@@ -5,7 +5,6 @@ import '../../node_modules/bootstrap/dist/css/bootstrap.min.css'
 
 const KezdoLap = () => {
     const navigate = useNavigate();
-
     return (
         <div className="kezdo-lap">
             <div className="topnav">
